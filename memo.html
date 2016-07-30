@@ -1,0 +1,71 @@
+< >태그 시작
+</>태그 끝
+
+// 하이퍼링크 관련
+ a = anchor (하이퍼링크)
+ href = "" <= 링크연결
+ target = "_blank" <= 새창으로 띄우기
+ title = "링크에 마우스 대고있을시 뜨는 단어"
+
+// 주요 제목 관련
+ h1 = head1(제목 숫자로 크기조절) <h1></h1>,<h2></h2>
+
+
+// 글자 변경
+ strong = 글자를 짙게하기 <strong></strong>
+
+// 차레 설정 관련
+문서 구조 설정 방법
+li = list (문서 차례처럼 표시)
+
+oi =  ordered list(문서 표시시 앞에 숫자 붙힘)
+
+ul = unored list(문서끼리 구분 시켜주는 기능)
+
+
+//head 관련
+title = 태그 제목 할수있음 head 안에 적음
+<!DOCTYPE html> = 맨위에 올라감,태그들이 어떠한 형식(버전)에 따른것인지 알려주는 기능 대부분 위 형식 고수
+
+<meta charset="utf-8"> = 글자깨짐 방지 head 안에 적음
+
+// html의 기초 3개 구분
+head = 본문제외 감싸기(본문위에) <<head></head>
+body = 본문 감싸기 <body></body>
+html = 전체감싸기 <html></html>
+
+//본문중 엔터 관련
+p = 글자 줄바꿈 (1칸 기본적으로)<css 로 가능함><p></p>
+  br = 강제로 줄을 바꾼다 1번에 1줄씩(사용비추)<br>
+//이미지 넣는 방법
+  img = <img src="이미지 이름" width="넓이" height="높이" alt = "그림이 없을시 대체 이름" title="그림에 커서 대면 나타나는 글자">
+
+
+//표만들기(table)
+table = 모든 표는  table 안에 속해야 가능<table></table>
+border = table 설정중 겉의 표 두께조절 <table border="숫자">
+tr = table안에 하나의 행을 설정해줌 <tr></tr>
+td = tr안에 하나의 열을 만들때 쓰임 (표안에 들어갈 단어는 tr안에 들어감) <tr></tr>
+th = td와 같으나 안에 있는 글자를 진하게 만듬 <th></th>
+
+thead = 표만들때 맨 윗줄에 행을 입력함(table안에 있으면 무저건 실행시 맨위로 들어감) <thead></thead>
+tbody = 표만들째 맨위와 맨 아래를 제외하고 차레대로 들어감  <tbody></tbody>
+tfoot = 표만들때 맨 아래줄에 표시되는 행을 입력함(table안에 있으면 무저건 맨 아래로 들어감) <tfoot></tfoot>
+
+rowspan = 행병합 하고 싶을때 <td rowpsan="숫자" >
+colspan = 열병합 하고 싶을때 <td rowspan="숫자" >
+
+//form
+<form action="위치"> = >submit 눌르면 전송하는 위치표시 <form action=""></form>
+<input type="text"> => text정보 입력 가능한 칸 생성
+<input type="password"> => 어떤 글자 입력했는지 못보게 하는 칸 생성
+<input type="submit"> => 입력정보 전송하는 버튼
+name = 각각 빈칸에 이름을 지정해서 데이터 전송시 각각 이름값으로 전송하게 도와줌
+textarea = 여러줄을 입력할수있는 입력란 생성 <textarea name="입력란 이름" rows="행" cols="열"></textarea>
+<select  name="주소이름" multiple(다중선택기능 ctrl키 사용)></select> = 다수의 보기중에 선택하는 기능
+<option value="주소"></option> = selext안에 선택보기를 적을때 쓰는 문장
+<input type="radio" name="이름"> => 버튼생성기능 단일선택 (name값이 같으면 여러개여도 1개만 선택됨)
+<input type="checkbox" name="이름"> =>버튼생성 다중선택 (name 값이 같을경우)
+checked =  input안에 들어감 실행시 이 글자가 있는곳에 체크되어있는 채로 있음
+<input type="button"> => 버튼생성 (눌러도 작동안함 적어도 HTML에선)
+<input type="reset"> => 버튼 눌르면 적어놓았던 모든 글과 체크 초기화
